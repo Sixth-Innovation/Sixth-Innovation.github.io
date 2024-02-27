@@ -1,15 +1,3 @@
-// const toggleBtn = document.querySelector('.toggle_btn');
-// const toggleBtnIcon = document.querySelector('.toggle_btn i');
-// const dropDownMenu = document.querySelector('.dropdown_menu');
-
-// toggleBtn.onclick = function () {
-//     dropDownMenu.classList.toggle('open');
-//     const isOpen = dropDownMenu.classList.contains('open');
-
-//     toggleBtnIcon.classList.toggle('fa-xmark', isOpen);
-//     toggleBtnIcon.classList.toggle('fa-bars', !isOpen);
-// };
-
 let insidecard = document.querySelectorAll('.div-content');
 let sidebarLinks = document.querySelectorAll('.pd---content-inside-card.template-pages---sidebar ul li a');
 
@@ -45,7 +33,15 @@ window.onscroll = () => {
     }
 };
 
-// window.addEventListener("scroll", function() {
-//     var header = document.querySelector("header");
-//     header.classList.toggle("sticky", window.scrollY > 0);
-// })
+/*--------------------------- SHOW MENU ------------------------------*/
+const showMenu = (toggleId, navId) =>{
+    const toggle = document.getElementById(toggleId),
+    nav = document.getElementById(navId)
+
+    toggle.addEventListener('click', () =>{
+        nav.classList.toggle('show-menu')
+        toggle.classList.toggle('show-icon')
+    })
+}
+
+showMenu('nav-toggle','nav-menu')

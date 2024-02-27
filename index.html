@@ -5,6 +5,7 @@
     <meta chareset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edg" />
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -16,50 +17,79 @@
     <div class="page-wrapper">
         <div class="overflow-hidden position-relative">
             <div data-animation="default" class="header-wrapper w-nav" data-easing2="ease" data-easing="ease" data-collapse="medium" data-w-id="296f8093-73a5-a05e-210a-be41bc6222cc" role="banner" data-duration="400" id="Header">
-                <div class="container-default w-container">
-                    <div class="dropdown-header-wrapper---bg-copy"></div>
-                    <div class="header-content-wrapper">
-                        <a href="/" class="header-logo-link w-nav-brand">
-                            <p class="header-logo">Sixth Innovation</p>
-                        </a>
-                        <div class="header-middle">
-                            <nav role="navigation" class="header-nav-menu-wrapper w-nav-menu">
-                                <ul role="list" class="header-nav-menu-list">
-                                    <li class="header-nav-list-item middle">
-                                        <div data-hover="false" data-delay="0" data-w-id="fde83cd6-88d0-9d5a-35ff-58d2b8c6b88e" class="dropdown-wrapper-new w-dropdown">
-                                            <div class="dropdown-new w-dropdown-toggle">
-                                                <div class="header-nav-link">Products</div>
-                                                <div class="line-rounded-icon dropdown-arrow w-icon-dropdown-toggle"></div>
-                                            </div>
-                                            <nav class="dropdown-column-wrapper w-dropdown-list">
-                                                <a href="/people-counting" class="dropdown-link w-dropdown-link">People Counting</a>
-                                                <a href="/concealgun-detection" class="dropdown-link w-dropdown-link">ConcealGun Detection</a>
-                                            </nav>
-                                        </div>
-                                    </li>
-                                    <li class="header-nav-list-item middle">
-                                        <a href="/deploy" class="header-nav-link w-nav-link">Deployment</a>
-                                    </li>
-                                    <li class="header-nav-list-item middle">
-                                        <a href="http://docs.cvedia.com/" target="_blank" class="header-nav-link w-nav-link">Documentation</a>
-                                    </li>
-                                    <li class="header-nav-list-item btn---show-in-mbl">
-                                        <a href="/contact" class="btn-primary width-100 w-button">Contact us</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                        <div class="header-right-side">
-                            <a href="/contact" class="btn-primary small header-btn-hidde-on-mb w-button">Contact us</a>
-                            <div class="hamburger-menu-btn w-nav-button">
-                                <div class="hamburger-menu-wrapper">
-                                    <div class="hamburger-menu-bar top"></div>
-                                    <div class="hamburger-menu-bar bottom"></div>
-                                </div>
+                <header class="header">
+                    <nav class="nav container">
+                        <div class="nav__data">
+                            <a href="/" class="header-logo-link w-nav-brand">
+                                <p class="header-logo">Sixth Innovation</p>
+                            </a>
+    
+                            <div class="nav__toggle" id="nav-toggle">
+                                <i class="ri-menu-line nav__burger"></i>
+                                <i class="ri-close-line nav__close"></i>
                             </div>
+    
                         </div>
-                    </div>
-                </div>
+                        <!------------------------- NAV MENU ------------------------------->
+                        <div class="nav__menu" id="nav-menu">
+                            <ul class="nav__list">
+                                <li><a href="#" class="nav__link">Company</a></li>
+    
+                                <!------------------------- DROPDOWN I ------------------------------->
+                                <li class="dropdown__item">
+                                    <div class="nav__link">
+                                        Products <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                                    </div>
+    
+                                    <ul class="dropdown__menu">
+                                        <li>
+                                            <a href="index.html" class="dropdown__link">
+                                                <i class="ri-group-line"></i> People Counting
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a href="conceal_index.html" class="dropdown__link">
+                                                <i class="ri-infrared-thermometer-line"></i> Conceal Gun
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+    
+                                <!------------------------- DROPDOWN II ------------------------------->
+                                <li class="dropdown__item">
+                                    <div class="nav__link">
+                                       Users <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                                    </div>
+    
+                                    <ul class="dropdown__menu">
+                                        <li>
+                                            <a href="#" class="dropdown__link">
+                                                <i class="ri-user-line"></i> Profiles
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a href="#" class="dropdown__link">
+                                                <i class="ri-lock-line"></i> Accounts
+                                            </a>
+                                        </li>
+        
+                                        <li>
+                                            <a href="#" class="dropdown__link">
+                                                <i class="ri-message-3-line"></i> Messages
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+    
+    
+                                <li><a href="#" class="nav__link">Contact</a></li>
+    
+                            </ul>
+                        </div>
+                    </nav>
+                </header>
                 <div class="header-wrapper---bg"></div>
                 <div class="header-nav-menu---bg"></div>
             </div>
