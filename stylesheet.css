@@ -2441,3 +2441,15 @@ figcaption {
         transition: top .3s;
     }
 }
+
+/* For large devices */
+@media screen and (min-width: 1440px){
+    /* Show dropdown menu */
+    .dropdown__item:hover .dropdown__menu{
+        opacity: 1;
+        top: 4.3rem;
+        pointer-events: inherit;
+        transition: top .3s;
+    }
+
+}
