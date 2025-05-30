@@ -163,8 +163,8 @@ const solutionDetails = [
         image: "AI.png"
     },
     {
-        title: "Edge-Aware Quality Control",
-        description: "Enhanced image analysis that accurately detects abnormalities at the edges of plates, a common blind spot in traditional systems, enabling higher quality assurance and less material waste.",
+        title: "Comprehensive Plate-Type",
+        description: "Supports detection across 13 distinct paper plate types—including various compartment boxes, round, oval, rectangular plates, and bowls—ensuring reliable inspection regardless of shape or structure.",
         icon: "ri-focus-3-line",
         image: "detect_plate.png"
     },
@@ -175,8 +175,8 @@ const solutionDetails = [
         image: "result_defect.png"
     },
     {
-        title: "Automated Anomaly Labeling",
-        description: "AI-driven model highlights and frames detected defects directly on product images, with results stored and displayed in a visual dashboard for easy traceability and process optimization",
+        title: "Extensive Defect Coverage",
+        description: "Capable of identifying virtually all defect types found in paper plates—no matter how subtle—including black spots, scratches, tears, dark marks, holes, water stains, dents, wrinkles, color smears, and feather-like traces.",
         icon: "ri-image-edit-line",
         image: "defect_type.png"
     },
